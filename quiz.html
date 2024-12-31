@@ -1,0 +1,46 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Marine Life Quiz</title>
+      <link rel="stylesheet" href=".\css\quizstyle.css">
+    </head>
+    <body>
+      <div id="start-screen">
+      </center><h1>Test your knowledge:-</h1></center>
+        <center><button class="start-quiz-btn" onclick="startQuiz()">Start Quiz</button></center>
+      </div>
+    
+      <div id="countdown" class="countdown"></div>
+
+      <div id="quiz-screen" class="hidden">
+       
+        <div id="timer" class="timer"></div>
+        <div id="score" class="score"></div>
+        <div id="question" class="question"></div>
+        <div id="options" class="options">
+          <button class="option-btn" onclick="checkAnswer(0)"></button>
+          <button class="option-btn" onclick="checkAnswer(1)"></button>
+          <button class="option-btn" onclick="checkAnswer(2)"></button>
+          <button class="option-btn" onclick="checkAnswer(3)"></button>
+        </div>
+        <div id="explanation-card"></div>
+      </div>
+      <audio id="background-music" loop>
+        <source src="./assets/music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <div id="result-screen" class="hidden">
+        <div><button id="back-to-main" onclick="backToMainSite()">Back to Home</button></div>
+        <div id="final-score"></div>
+        
+        <div id="explanations"><h2>Explanation of Incorrect Answers</h2></div>
+      </div>
+      <div class="fish" id="fish"></div>
+      <script src=".\js\quizscript.js"></script>
+    </body>
+    </html>
+    

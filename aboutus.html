@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--darkgreen);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--darkgreen);
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+
+        .hobbies {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .hobbies li {
+            display: inline-block;
+            background: var(--darkgreen);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #0e4d92;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffa500;
+        }
+       
+        
+        body {
+            padding-top: 4rem; /* Adjust for fixed navbar */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bubble" style="width: 30px; height: 30px; top: 90%; left: 10%; animation-duration: 6s;"></div>   
+    <div class="bubble" style="width: 40px; height: 40px; top: 80%; left: 5%; animation-duration: 7s;"></div>
+    <div class="bubble" style="width: 35px; height: 35px; top: 10%; left: 7%; animation-duration: 5s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; top: 60%; left: 7%; animation-duration: 8s;"></div>
+    <div class="bubble" style="width: 35px; height: 35px; top: 65%; left: 95%; animation-duration: 5s;"></div>
+    <div class="bubble" style="width: 30px; height: 30px; top: 80%; left: 92%; animation-duration: 6s;"></div>
+    <div class="bubble" style="width: 40px; height: 40px; top: 70%; left: 3%; animation-duration: 7s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; top: 70%; left: 91%; animation-duration: 8s;"></div>
+    <div class="bubble" style="width: 35px; height: 35px; top: 90%; left: 5%; animation-duration: 5s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; top: 70%; left: 93%; animation-duration: 8s;"></div>
+    <div class="bubble" style="width: 30px; height: 30px; top: 40%; left: 94%; animation-duration: 6s;"></div>
+    <div class="bubble" style="width: 40px; height: 40px; top: 90%; left: 3%; animation-duration: 7s;"></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="volcano.html">Underwater Volcanoes</a>
+        <a href="shipwreck.html">Shipwrecks</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="feedback.html">Feedback Form</a>
+        
+    </nav>
+    
+    <div class="container">
+        <img id="profile-img" src="./assets/images/myphoto.jpg" alt="My Photo" class="profile-img">
+        <h1>Bhavya Singhal</h1>
+        <h2>Student at THE MODERN SCHOOL, ECNCR, Class 6</h2>
+        <p>Hello! I'm an enthusiastic student with a passion for learning and exploring new things. Here's a little more about me:</p>
+
+        <h3>Hobbies</h3>
+        <ul class="hobbies">
+            <li>Reading</li>
+            <li>Drawing</li>
+            <li>Traveling</li>
+            <li>Sports</li>
+        </ul>
+
+        <h3>Follow Me</h3>
+            
+          
+        <div class="social-links">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            
+            <a href="#" target="_blank">Twitter</a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com" target="_blank">
+                 <i class="fab fa-linkedin"></i>
+            </a>
+              
+        </div>
+    </div>
+
+
+    <script>
+        const imagePaths = [
+            './assets/images/myphoto.jpg',
+            './assets/images/photo2.jpg',
+            './assets/images/photo3.jpg',
+        ];
+        let currentIndex = 0;
+
+        const profileImg = document.getElementById('profile-img');
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % imagePaths.length;
+            profileImg.src = imagePaths[currentIndex];
+        }, 5000); // Change image every 5 seconds
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffeded;
+    flex-direction: column;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .start-quiz-btn {
+    padding: 15px 30px;
+    font-size: 40px;
+    background-color: #38ad3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .countdown {
+    
+    font-size: 300px;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+  
+  #explanation-card{
+    text-align: center;
+    font-size:30px;
+    padding-top:150px;
+    
+    
+  }
+  .timer {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+ 
+  .score { 
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .question {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    width:90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .option-btn {
+    width: 400px;
+    padding: 35px;
+    font-size: 28px;
+    margin: 10px;
+    background-color: #e2cf64;
+    border: 2px solid #726416;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: red;
+    color: white;
+  }
+  
+  #result-screen {
+    text-align: center;
+  }
+  
+  #final-score {
+    color: #1f7021;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-top: 1rem;
+  }
+  
+  #explanations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explanation-card {
+    background-color: #fcbebee5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 70vw;
+  }
+  #back-to-main {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #38ad3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #back-to-main:hover {
+    background-color: #117e15;
+  }
+  body {
+   
+    cursor: none; /* Hide the default cursor */
+  }
+
+  .fish {
+    position: absolute;
+    width: 100px;  /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-image: url('fish1.png'); /* Add your fish image */
+    background-size: cover;
+    transform-origin: 50% 50%;
+    transform: rotate(-30deg);
+    animation: swim 0.5s infinite;
+  }
+
+  @keyframes swim {
+    0%, 100% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+  }

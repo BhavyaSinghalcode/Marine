@@ -1,0 +1,133 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e1a29;
+    color: #ffffff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay to reduce video brightness */
+    z-index: 1;
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none; /* Ensures content on top remains clickable */
+}
+
+.content, header, footer {
+    position: relative;
+    z-index: 2;
+    opacity: 0.7; /* Slightly reduced opacity for content */
+}
+
+header {
+    background: linear-gradient(to bottom, #02203c, #0e1a29);
+    color: #f0f8ff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.content {
+    max-width: 70vw;
+    margin: 0 auto;
+    background-color: #102a42;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content h2 {
+    color: #76d7ea;
+}
+
+.content h3 {
+    color: #b3ecff;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.image-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image-row img {
+    min-width: 350px;
+    max-width:351px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    
+}
+#back-to-main {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #38ad3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  #back-to-main:hover {
+    background-color: #117e15;
+  }
+.image-row img:hover {
+    transform: scale(1.1);
+}
+
+.image-row:nth-child(odd) .image-left {
+    order: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #02203c;
+    color: #f0f8ff;
+}
+
+a {
+    color: #76d7ea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

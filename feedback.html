@@ -1,0 +1,226 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <link rel="stylesheet" href="./css/styles.css">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Feedback Form</title>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Montserrat', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    background-color:var(--midgreen);
+                    color: #fff;
+                }
+               
+                
+                body {
+                    padding-top: 4rem; /* Adjust for fixed navbar */
+                }
+                
+        
+                .container {
+                    background:#ffff;
+                    padding: 2rem;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                    width: 90%;
+                    max-width: 600px;
+                    text-align: center;
+                }
+        
+                h1 {
+                    font-size: 2rem;
+                    color: var(--darkgreen);
+                    margin-bottom: 1rem;
+                }
+        
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 1.5rem;
+                    color:var(--darkgreen);
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+        
+                label {
+                    font-size: 1rem;
+                    text-align: left;
+                    color: var(--darkgreen);
+                }
+        
+                input, textarea, button {
+                    font-size: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    border: none;
+                    width: 100%;
+                }
+        
+                input, textarea {
+                    background:  var(--lightgreen);
+                    color: var(--darkgreen);
+                }
+        
+                textarea {
+                    resize: vertical;
+                    min-height: 100px;
+                }
+        
+                button {
+                    background: var(--darkgreen);
+                    color: var(--lightgreen);
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+        
+                button:hover {
+                    background: var(--midgreen);
+                }
+        
+                .rating {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.5rem;
+                 
+                }
+        
+                .star {
+                    font-size: 2rem;
+                    color: #ccc;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                }
+        
+                .star.selected {
+                    color: #ffd700;
+                }
+        
+                .star:hover, .star:hover ~ .star {
+                    color: #ffd700;
+                }
+        
+                .rating-text {
+                    font-size: 1rem;
+                    color: var(--darkgreen);
+                    margin-bottom: 1.5rem;
+                }
+        
+
+                .thank {
+                    
+                    font-size: 1.5rem;
+                    color:var(--darkgreen);
+                    margin-top: 2rem;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="bubble" style="width: 30px; height: 30px; top: 80%; left: 10%; animation-duration: 6s;"></div>   
+            <div class="bubble" style="width: 40px; height: 40px; top: 80%; left: 5%; animation-duration: 7s;"></div>
+            <div class="bubble" style="width: 35px; height: 35px; top: 10%; left: 7%; animation-duration: 5s;"></div>
+            <div class="bubble" style="width: 50px; height: 50px; top: 60%; left: 7%; animation-duration: 8s;"></div>
+            <div class="bubble" style="width: 35px; height: 35px; top: 65%; left: 95%; animation-duration: 5s;"></div>
+            <div class="bubble" style="width: 30px; height: 30px; top: 80%; left: 92%; animation-duration: 6s;"></div>
+            <div class="bubble" style="width: 40px; height: 40px; top: 70%; left: 3%; animation-duration: 7s;"></div>
+            <div class="bubble" style="width: 50px; height: 50px; top: 70%; left: 91%; animation-duration: 8s;"></div>
+            <div class="bubble" style="width: 35px; height: 35px; top: 80%; left: 5%; animation-duration: 5s;"></div>
+            <div class="bubble" style="width: 50px; height: 50px; top: 70%; left: 93%; animation-duration: 8s;"></div>
+            <div class="bubble" style="width: 30px; height: 30px; top: 40%; left: 94%; animation-duration: 6s;"></div>
+            <div class="bubble" style="width: 40px; height: 40px; top: 80%; left: 3%; animation-duration: 7s;"></div>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="volcano.html">Underwater Volcanoes</a>
+            <a href="shipwreck.html">Shipwrecks</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="feedback.html">Feedback Form</a>
+            
+        </nav>
+            
+            <div class="container" id="form-container">
+                <h1>We Value Your Feedback</h1>
+                <p>Let us know what you think about our service. Your feedback helps us improve!</p>
+                <form id="feedback-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                    <label>Rate Your Experience</label>
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <div class="rating-text" id="rating-text">Select a star to rate</div>
+        
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" placeholder="Write your feedback here..." required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="thanks" id="thanks-message">Thanks for your feedback!</div>
+            </div>
+        
+            <script>
+                const stars = document.querySelectorAll('.star');
+                const ratingText = document.getElementById('rating-text');
+                const form = document.getElementById('feedback-form');
+                const formContainer = document.getElementById('form-container');
+                const thanksMessage = document.getElementById('thanks-message');
+        
+                stars.forEach(star => {
+                    star.addEventListener('click', () => {
+                        const value = star.getAttribute('data-value');
+                        stars.forEach(s => s.classList.remove('selected'));
+                        for (let i = 0; i < value; i++) {
+                            stars[i].classList.add('selected');
+                        }
+        
+                        switch (value) {
+                            case '1':
+                                ratingText.textContent = "Not so good";
+                                break;
+                            case '2':
+                                ratingText.textContent = "Could be better";
+                                break;
+                            case '3':
+                                ratingText.textContent = "Average";
+                                break;
+                            case '4':
+                                ratingText.textContent = "Good";
+                                break;
+                            case '5':
+                                ratingText.textContent = "Excellent";
+                                break;
+                        }
+                    });
+                });
+        
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    console.log('Form submitted');
+                    formContainer.innerHTML = "<div class='thank'>🌟Thanks for your feedback!🌟</div>";
+                });
+                
+            </script>
+        </body>
+        </html>
+        

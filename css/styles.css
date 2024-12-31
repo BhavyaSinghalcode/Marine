@@ -1,0 +1,441 @@
+:root {
+    --darkgreen:#033941;
+    --lightgreen:#d6fdfa;
+    --midgreen:#62b7c4;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #033941;
+    color: #012721;
+}
+
+header {
+    background: linear-gradient(to right, #006064, #004d40);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #004d40;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font: 1.2rem sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffff;
+
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+
+}
+
+section {
+    padding: 2rem;
+}
+
+.content {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.content h2 {
+    color: #00796b;
+}
+
+.coral-reefs {
+    background-color: #e0f2f1;
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.marine-animals {
+    background-color: #b2ebf2;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.food-web {
+    background-color: #b2dfdb;
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.highlight {
+    font-weight: bold;
+    color: #004d40;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #004d40;
+    color: white;
+}
+
+.interactive {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 1rem;
+    /* Space between grid items */
+    max-width: 800px;
+    /* Adjust to your desired width */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.image_item1 {
+    text-align: center;
+    /* Center text under the image */
+}
+
+.image_item1 img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    /* Crop and fill the image proportionally */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.image_item1 img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Enhance the shadow on hover */
+}
+
+.image_item1 p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    /* Text color */
+}
+
+.image-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.image-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-description2 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.scroll-btn {
+    background: transparent;
+    border: none;
+    font-size: 80px;
+    color: #fd2db8;
+    animation: blink 1s infinite alternate;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+.quiz-section {
+    border-radius: 8px;
+    padding-left: 5rem;
+}
+
+
+.quiz-section button {
+    background-color: #f7de06;
+    color: rgb(59, 3, 3);
+    border: none;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0 0 40px rgba(192, 14, 14, 0.8);
+    animation: blink .7s infinite alternate;
+
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.quiz-section button:hover {
+    background-color: #fbff00;
+    transform: scale(1.1);
+    animation: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.video-header-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.video-header-container h1 {
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.video-header-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.image-container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.image-and-description {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+
+.image-and-description img {
+    max-width: 400px;    
+    height: auto;
+    border-radius: 15px;
+}
+
+.image-and-description p {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#underwater-plants {
+    background-color: #d5faf4;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.fow {
+    width: 50vw;
+    padding-left: 10vw;
+
+}
+
+/* Bubble Effects */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    animation: float 5s infinite ease-in-out;
+    overflow: visible;
+}
+
+.horse1 {
+    animation: flot 5s infinite ease-in-out;
+    overflow: visible;
+    background-image: url("seahorse1.png");
+}
+
+.horse2 {
+    position: absolute;
+    animation: flot 5s infinite ease-in-out;
+    overflow: visible;
+    background-image: url("seahorse2.png");
+}
+
+/* Bubbles floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(-250px) scale(1);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0.7;
+    }
+}
+
+@keyframes flot {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-250px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Marine Creatures */
+.creature {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.creature:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Adding a fun fact on hover */
+.creature:hover::after {
+    content: attr(data-fact);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Positioning creatures */
+.creature.fish {
+    top: 200px;
+    left: 100px;
+    animation: move 8s infinite linear;
+}
+
+.creature.shark {
+    top: 300px;
+    left: 500px;
+    animation: move 10s infinite linear;
+}
+
+/* Movement animation */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+
+.fishcur {
+    position: absolute;
+    width: 100px;
+    /* Adjust width */
+    height: 50px;
+    /* Adjust height */
+    background-image: url('fish1.png');
+    /* Add your fish image */
+    background-size: cover;
+    transform-origin: 50% 50%;
+    transform: rotate(-30deg);
+    animation: swim 0.5s infinite;
+}
+
+@keyframes swim {
+
+    0%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+}
